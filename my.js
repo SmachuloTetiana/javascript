@@ -1,5 +1,17 @@
-var year = 1990;
-var month = 10;
-var date = 15;
-var sum = year + month + date;
-alert(sum);
+var age = Number(prompt('Enter your age'));
+var message = "You are " + getAge(age) ;
+alert(message);
+
+function getAge(age){
+    var result;
+    if(age < 18){
+        result = 'young';
+    }
+    else if(age > 60){
+        result = 'old';
+    }else{
+        result = 'edalt';
+    }
+    
+    return result;
+}
