@@ -7,7 +7,7 @@ function getAge(age){
     if(age < 18){
         result = 'young';
     }
-    else if(age > 60){
+    if(age > 60){
         result = 'old';
     }else{
         result = 'edalt';
